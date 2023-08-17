@@ -1,0 +1,1 @@
+# -Resolution-Theorem-Prover-for-Propositional-Logic-in-Prolog
