@@ -5,18 +5,18 @@ This Prolog program serves as a resolution theorem prover for propositional logi
 ## Operators
 
 ### Unary Operators: 
-  -neg: This unary operator represents the logical negation or NOT operation. It takes a single formula as an operand and produces the logical negation of that formula. For example, if P is a formula, then neg P represents "not P" or "¬P".
+  - neg: This unary operator represents the logical negation or NOT operation. It takes a single formula as an operand and produces the logical negation of that formula. For example, if P is a formula, then neg P represents "not P" or "¬P".
 
 ### Binary Operators:
 
-  -and: The binary operator and represents the logical AND operation. It takes two formulas as operands and produces the logical conjunction of those formulas. For example, if P and Q are formulas, then P and Q represents "P AND Q".
+  - and: The binary operator and represents the logical AND operation. It takes two formulas as operands and produces the logical conjunction of those formulas. For example, if P and Q are formulas, then P and Q represents "P AND Q".
   -or: The binary operator or represents the logical OR operation. It takes two formulas as operands and produces the logical disjunction of those formulas. For example, if P and Q are formulas, then P or Q represents "P OR Q".
-  -imp: The binary operator imp represents the logical implication operation. It takes two formulas as operands and produces the implication of the first formula by the second formula. For example, if P and Q are formulas, then P imp Q represents "P IMPLIES Q".
-  -revimp: The binary operator revimp represents the reverse implication operation. It takes two formulas as operands and produces the reverse implication of the first formula by the second formula. For example, if P and Q are formulas, then P revimp Q represents "P REVERSE IMPLIES Q".
-  -uparrow: The binary operator uparrow represents the logical NAND operation. It takes two formulas as operands and produces the logical NAND of those formulas. For example, if P and Q are formulas, then P uparrow Q represents "P NAND Q".
-  -downarrow: The binary operator downarrow represents the logical NOR operation. It takes two formulas as operands and produces the logical NOR of those formulas. For example, if P and Q are formulas, then P downarrow Q represents "P NOR Q".
-  -notimp: The binary operator notimp represents the logical NOT implication operation. It takes two formulas as operands and produces the logical NOT implication of those formulas. For example, if P and Q are formulas, then P notimp Q represents "P NOT IMPLIES Q".
-  -notrevimp: The binary operator notrevimp represents the logical NOT reverse implication operation. It takes two formulas as operands and produces the logical NOT reverse implication of those formulas. For example, if P and Q are formulas, then P notrevimp Q represents "P NOT REVERSE IMPLIES Q".
+  - imp: The binary operator imp represents the logical implication operation. It takes two formulas as operands and produces the implication of the first formula by the second formula. For example, if P and Q are formulas, then P imp Q represents "P IMPLIES Q".
+  - revimp: The binary operator revimp represents the reverse implication operation. It takes two formulas as operands and produces the reverse implication of the first formula by the second formula. For example, if P and Q are formulas, then P revimp Q represents "P REVERSE IMPLIES Q".
+  - uparrow: The binary operator uparrow represents the logical NAND operation. It takes two formulas as operands and produces the logical NAND of those formulas. For example, if P and Q are formulas, then P uparrow Q represents "P NAND Q".
+  - downarrow: The binary operator downarrow represents the logical NOR operation. It takes two formulas as operands and produces the logical NOR of those formulas. For example, if P and Q are formulas, then P downarrow Q represents "P NOR Q".
+  - notimp: The binary operator notimp represents the logical NOT implication operation. It takes two formulas as operands and produces the logical NOT implication of those formulas. For example, if P and Q are formulas, then P notimp Q represents "P NOT IMPLIES Q".
+  - notrevimp: The binary operator notrevimp represents the logical NOT reverse implication operation. It takes two formulas as operands and produces the logical NOT reverse implication of those formulas. For example, if P and Q are formulas, then P notrevimp Q represents "P NOT REVERSE IMPLIES Q".
 
 #### Step-by-Step Guide
 
