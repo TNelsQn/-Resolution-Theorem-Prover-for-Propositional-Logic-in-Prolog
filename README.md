@@ -22,16 +22,15 @@ This Prolog program serves as a resolution theorem prover for propositional logi
 
 1. **CNF Transformation**
    - The initial step involves transforming a given propositional formula into CNF using the provided guidelines and the example program in Section 2.9 of Fitting's book.
-   - The program defines the unary operator `neg` and binary operators `and`, `or`, `imp`, `revimp`, `uparrow`, `downarrow`, `notimp`, and `notrevimp`.
    - Predicates such as `conjunctive/1`, `disjunctive/1`, `components/3`, and `component/2` are reused from the example program to recognize and split formulas.
-   - The interface predicate is `clauseform(X, Y)`, where Y is the CNF of the formula X.
+   - The interface predicate is `expand(X, Y)`, where Y is the CNF of the formula X.
 
 2. **Handling Secondary Connectives**
-   - Extend the program to handle the secondary binary operators `equiv` and `notequiv` using the definitions in Table 2.1 of the book.
+   - The program was then extended to handle the secondary binary operators `equiv` and `notequiv` using the definitions in Table 2.1 of the book.
 
 3. **Resolution Proof**
-   - Implement the atomic resolution rule using predicates `resolutionstep/2` and `resolution/2` similar to the example predicates `singlestep/2` and `expand/2`.
-   - Check for closed resolution expansion as described in Section 3.3 of the book.
+   - atomic resolution rules were added using predicates `resolutionstep/2` and `resolution/2` similar to the example predicates `singlestep/2` and `expand/2`.
+   - Check closed-resolution expansion as described in Section 3.3 of the book for more information.
 
 4. **Main Predicate**
    - The main predicate is `test/1`, which takes a propositional formula as input and prints "YES" if a propositional proof exists, and "NO" otherwise.
@@ -46,7 +45,8 @@ This Prolog program serves as a resolution theorem prover for propositional logi
 
 #### Test Data
 
-Use the provided test data to determine which of the following formulas are theorems:
+The following are example programs that can be used to test the algorithm:
+
 1. ((x imp y) and x) imp y
 2. (neg x imp y) imp (neg (x notimp y) imp y)
 3. ((x imp y) and (y imp z)) imp (neg neg z or neg x)
@@ -57,9 +57,3 @@ Use the provided test data to determine which of the following formulas are theo
 8. (neg x revimp neg y) and ((z notrevimp u) or (u uparrow neg v))
 9. ((x or y) imp (neg y notrevimp z)) or (neg neg (z equiv x) notrevimp y)
 10. (neg (z notrevimp y) revimp x) imp ((x or w) imp ((y imp z) or w))
-
-#### Efficiency Considerations
-
-You can enhance the efficiency of the program by incorporating strategies to eliminate duplicate variables and clauses early in the resolution process.
-
-Please ensure that you have a Prolog interpreter/environment set up to execute the program. Modify and expand the program as needed to accommodate additional operators or proof methods.
